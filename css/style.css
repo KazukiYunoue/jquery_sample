@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* Structures */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+.container {
+  width: 750px;
+  margin: auto;
+}
+
+.controller {
+  position: fixed;
+  bottom: 50px;
+  right: 300px;
+}
+
+.control_button {
+  width: 41px;
+  height: 41px;
+  padding: 13px;
+  border: 1px solid #CCCCCC;
+  text-align: center;
+  background: #FFF;
+  position: relative;
+}
+
+.scroll_up {
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #888;
+  border-top: 3px solid #888;
+  transform: rotate(45deg);
+}
+
+.scroll_down {
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid #888;
+  border-bottom: 3px solid #888;
+  transform: rotate(45deg);
+}
+
+.hyper_link {
+  max-width: 75%;
+  widows: auto;
+  max-height: 75%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Skins */
+.text-dark {
+  color: #6A6A6A;
+}
+
+.text-content {
+  line-height: 1.5;
+  font-size: 1.3em;
+}
+
+.text-header1 {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.initially_hide {
+  display: none;
+}
