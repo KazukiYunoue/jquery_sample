@@ -29,5 +29,6 @@
     down_button.on("click", function(){
       scroll($(document).height());
     });
+    return this;
   };
 }(jQuery));
