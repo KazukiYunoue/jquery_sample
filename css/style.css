@@ -24,6 +24,7 @@ body {
   width: 41px;
   height: 41px;
   padding: 13px;
+  cursor: pointer;
   border: 1px solid #CCCCCC;
   text-align: center;
   background: #FFF;
