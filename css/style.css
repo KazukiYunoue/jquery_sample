@@ -14,7 +14,7 @@ body {
   margin: auto;
 }
 
-.controller {
+.scroller {
   position: fixed;
   bottom: 50px;
   right: 300px;
