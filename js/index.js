@@ -1,6 +1,11 @@
 jQuery(function ($){
   $(".scroller").scroller({
-    up_button: $("#scroll_up_button"),
-    down_button: $("#scroll_down_button")
+    up_button: $("#scroll-up-button"),
+    down_button: $("#scroll-down-button")
+  });
+  $("nav").toggler({
+    button: $(".toggler-secondary-nav"),
+    toggleClass: "tool-button-active",
+    target: $(".secondary-nav")
   });
 })

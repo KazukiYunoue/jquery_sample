@@ -7,20 +7,28 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jquery-3.4.1.min.js" charset="utf-8"></script>
   <script src="js/index.js" charset="utf-8"></script>
-  <script src="js/scroller.js" charset="utf-8"></script>
+  <script src="js/jquery.scroller.js" charset="utf-8"></script>
+  <script src="js/jquery.toggler.js" charset="utf-8"></script>
 </head>
 <body>
   <div class="container">
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Menu A</a></li>
-          <li><a href="#">Menu B</a></li>
-          <li><a href="#">Menu C</a></li>
-          <li><a href="#">Tools</a></li>
-        </ul>
-      </nav>
       <h1 class="text-header1">jQuery scroll to top and bottom plugin demo</h1>
+      <nav>
+        <ul class="navbar text-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Menu A</a></li>
+          <li class="nav-item"><a class="nav-link"  href="#">Menu B</a></li>
+          <li class="nav-item"><a class="nav-link"  href="#">Menu C</a></li>
+          <li class="nav-item"><a class="nav-link toggler-secondary-nav tool-button"  href="#">Tools</a></li>
+        </ul>
+        <div class="secondary-nav initially-hide bg-white text-secondary-nav">
+          <ul class="navbar secondary-navbar">
+            <li class="nav-item secondary-nav-item"><a class="nav-link" href="#">Sub A</a></li>
+            <li class="nav-item secondary-nav-item"><a class="nav-link"  href="#">Sub B</a></li>
+            <li class="nav-item secondary-nav-item"><a class="nav-link"  href="#">Sub C</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="text-dark text-content">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc urna tortor, congue id quam malesuada, sodales fermentum sapien. Morbi ullamcorper mauris magna. Ut pretium odio nec varius pellentesque. Phasellus sem sapien, ornare ac fringilla sed, dapibus volutpat neque. Maecenas et tempor augue. Maecenas nec ante eget massa facilisis pellentesque.</p>
@@ -35,14 +43,14 @@
       <p>Morbi egestas turpis et interdum pellentesque. Curabitur sed nunc quam. Nullam luctus nisl purus, nec adipiscing augue dignissim vitae. Aliquam at consequat lacus. Nullam nec auctor tortor, ac congue urna. Morbi accumsan eros convallis ligula laoreet aliquam. Pellentesque accumsan viverra ornare. Vivamus sed eros a sem ultricies cursus. Vivamus lobortis, tortor quis auctor ultrices, ante augue tempus ipsum, ut interdum nulla mauris id nulla.</p>
     </main>
     <div class="scroller">
-      <div id="scroll_up_button" class="control_button initially_hide">
-        <div class="scroll_up"></div>
+      <div id="scroll-up-button" class="control-button initially-hide">
+        <div class="scroll-up"></div>
       </div>
-      <div class="control_button">
-        <img class="hyper_link" src="images/np_link.png" alt="hyper link" />
+      <div class="control-button">
+        <img class="hyper-link" src="images/np_link.png" alt="hyper link" />
       </div>
-      <div id="scroll_down_button" class="control_button">
-        <div class="scroll_down"></div>
+      <div id="scroll-down-button" class="control-button">
+        <div class="scroll-down"></div>
       </div>
     </div>
   </div>

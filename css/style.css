@@ -14,13 +14,17 @@ body {
   margin: auto;
 }
 
+main {
+  padding-top: 30px;
+}
+
 .scroller {
   position: fixed;
   bottom: 50px;
   right: 300px;
 }
 
-.control_button {
+.control-button {
   width: 41px;
   height: 41px;
   padding: 13px;
@@ -31,7 +35,7 @@ body {
   position: relative;
 }
 
-.scroll_up {
+.scroll-up {
   width: 15px;
   height: 15px;
   border-left: 3px solid #888;
@@ -39,7 +43,7 @@ body {
   transform: rotate(45deg);
 }
 
-.scroll_down {
+.scroll-down {
   width: 15px;
   height: 15px;
   border-right: 3px solid #888;
@@ -47,7 +51,7 @@ body {
   transform: rotate(45deg);
 }
 
-.hyper_link {
+.hyper-link {
   max-width: 75%;
   widows: auto;
   max-height: 75%;
@@ -56,6 +60,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.secondary-nav {
+  position: absolute;
 }
 
 /* Skins */
@@ -68,11 +76,71 @@ body {
   font-size: 1.3em;
 }
 
+.text-nav {
+}
+
+.text-secondary-nav {
+}
+
 .text-header1 {
   font-size: 3em;
   font-weight: 600;
 }
 
-.initially_hide {
+.bg-white {
+  background: #FFFFFF;
+}
+
+.initially-hide {
   display: none;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.navbar a {
+  color: #888888;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #333333;
+}
+
+.tool-button {
+  border: 1px solid #FFFFFF;
+}
+
+.tool-button-active {
+  background: #DDDDDD;
+  border: 1px solid #AAAAAA;
+}
+
+.tool-button:hover {
+  background: #EEEEEE;
+  border: 1px solid #AAAAAA;
+}
+
+.nav-item {
+}
+
+.nav-link {
+  display: block;
+  padding: 6px 20px;
+}
+
+.secondary-nav {
+}
+
+.secondary-navbar {
+  border-bottom: none;
+}
+
+.secondary-nav-item {
 }

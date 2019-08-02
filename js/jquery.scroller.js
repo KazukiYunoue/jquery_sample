@@ -1,7 +1,13 @@
 (function($){
   $.fn.scroller = function(options) {
-    var up_button = options.up_button;
-    var down_button = options.down_button;
+    /*
+      up_button: jQuery Object
+      down_button: jQuery Object
+    */
+    options = $.extend({
+      up_button: '',
+      down_button: ''
+    }, options);
 
     var scroll = function(position){
       $("html").animate({scrollTop: position});
@@ -11,22 +17,22 @@
     }
     var toggle_button = function(){
       if (current_scroll_top() == 0){
-        up_button.fadeOut();
+        options.up_button.fadeOut();
       } else if(current_scroll_top() == ($(document).height() - $(window).height())){
-        down_button.fadeOut();
+        options.down_button.fadeOut();
       } else {
-        up_button.fadeIn();
-        down_button.fadeIn();
+        options.up_button.fadeIn();
+        options.down_button.fadeIn();
       }
     }
 
     $(window).on('scroll',function(){
       toggle_button();
     });
-    up_button.on("click", function(){
+    options.up_button.on("click", function(){
       scroll(0);
     });
-    down_button.on("click", function(){
+    options.down_button.on("click", function(){
       scroll($(document).height());
     });
     return this;
