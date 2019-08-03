@@ -10,7 +10,7 @@
     }, options);
 
     var scroll = function(position){
-      $("html").animate({scrollTop: position});
+      $("html, body").animate({scrollTop: position});
     }
     var current_scroll_top = function(){
       return $(window).scrollTop();
